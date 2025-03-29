@@ -66,7 +66,7 @@ body {
 }
 
 .detalle .imagen img {
-    width: 10%;
+    width: 100%;  /* Ajustado para que la imagen ocupe todo el espacio disponible */
     border-radius: 8px;
 }
 
@@ -140,6 +140,7 @@ body {
     display: flex;
     gap: 10px;
     margin-top: 15px;
+    flex-wrap: wrap;
 }
 
 .galeria img {
@@ -177,6 +178,7 @@ body {
     color: red;
     border-bottom: 2px solid red;
 }
+
 /* Estilos del contenedor de pestañas */
 .tabs {
     display: flex;
@@ -208,6 +210,7 @@ body {
 .tab:hover {
     color: red;
 }
+
 /* Estilos del contenido de pestañas */
 .tab-content {
     display: none;
@@ -223,7 +226,6 @@ body {
 .tab-content.active {
     display: block;
 }
-
 
 /* Reseñas */
 .reseñas {
@@ -242,8 +244,6 @@ body {
     color: gold;
 }
 
-
-
 /* FOOTER */
 .footer {
     background-color: #6A1B1A;
@@ -252,4 +252,79 @@ body {
     text-align: center;
     margin-top: 20px;
     font-size: 14px;
+}
+
+/* MEDIA QUERIES PARA HACERLO RESPONSIVO */
+
+/* Para pantallas pequeñas (teléfonos móviles) */
+@media screen and (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .detalle {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .detalle .imagen img {
+        width: 80%; /* Ajustar imagen para pantallas pequeñas */
+    }
+
+    .detalle .info {
+        text-align: center;
+    }
+
+    .galeria img {
+        width: 60px;
+        height: 40px;
+    }
+
+    .tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Para pantallas medianas (tabletas) */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .detalle {
+        flex-direction: column;
+    }
+
+    .detalle .imagen img {
+        width: 100%;
+    }
+
+    .galeria img {
+        width: 70px;
+        height: 45px;
+    }
+}
+
+/* Para pantallas grandes (escritorios) */
+@media screen and (min-width: 1024px) {
+    .detalle {
+        display: flex;
+        gap: 30px;
+    }
+
+    .detalle .imagen img {
+        width: 100%;
+    }
+
+    .tabs {
+        gap: 25px;
+    }
 }
