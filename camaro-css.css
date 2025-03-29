@@ -21,6 +21,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap; /* Se asegura que el contenido se ajuste */
 }
 
 .header img {
@@ -34,6 +35,8 @@ body {
 .navbar {
     display: flex;
     gap: 15px;
+    flex-wrap: wrap; /* Para que los enlaces se acomoden en pantallas pequeñas */
+    justify-content: center;
 }
 
 .navbar a {
@@ -59,11 +62,13 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap; /* Para que las secciones se acomoden en pantallas pequeñas */
 }
 
 /* Imagen principal */
 .detalle .imagen {
     flex: 2;
+    max-width: 100%;
 }
 
 .detalle .imagen img {
@@ -141,6 +146,7 @@ body {
     display: flex;
     gap: 10px;
     margin-top: 15px;
+    flex-wrap: wrap; /* Se adapta a pantallas pequeñas */
 }
 
 .galeria img {
@@ -164,6 +170,7 @@ body {
     margin-top: 20px;
     border-bottom: 2px solid #ddd;
     padding-bottom: 5px;
+    flex-wrap: wrap; /* Para que las pestañas se acomoden en pantallas pequeñas */
 }
 
 .tabs a {
@@ -178,6 +185,7 @@ body {
     color: red;
     border-bottom: 2px solid red;
 }
+
 /* Estilos del contenedor de pestañas */
 .tabs {
     display: flex;
@@ -243,6 +251,7 @@ body {
     color: gold;
 }
 
+/* Flechas de galería */
 .flecha {
     position: absolute;
     top: 50%;
@@ -275,4 +284,40 @@ body {
     text-align: center;
     margin-top: 20px;
     font-size: 14px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    /* Ajustes para pantallas pequeñas (tabletas, teléfonos) */
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .detalle {
+        flex-direction: column;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galeria img {
+        width: 60px;
+        height: 40px;
+    }
+
+    .detalle .imagen {
+        flex: 1;
+    }
+
+    .footer {
+        font-size: 12px;
+    }
 }
