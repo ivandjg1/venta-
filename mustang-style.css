@@ -259,8 +259,9 @@ body {
 /* Para pantallas pequeñas (teléfonos móviles) */
 @media screen and (max-width: 480px) {
     .header {
-        flex-direction: column;
+         display: flex;
         text-align: center;
+        justify-content: space-between;
     }
 
     .navbar {
