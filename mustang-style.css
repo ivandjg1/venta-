@@ -257,7 +257,7 @@ body {
 /* MEDIA QUERIES PARA HACERLO RESPONSIVO */
 
 /* Para pantallas pequeñas (teléfonos móviles) */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
     .header {
          display: flex;
         text-align: center;
