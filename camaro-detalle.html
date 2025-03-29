@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chevrolet Camaro SS 1969</title>
+    <link rel="stylesheet" href="camaro-css.css">
+</head>
+<body>
+    <header class="header">
+        <img src="logo.jpeg" alt="Logo">
+        <nav class="navbar">
+            <a href="index.html">Inicio</a>
+            <a href="Nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="detalle">
+            <div class="imagen">
+                <img src="camaro-imagenes/WhatsApp Image 2025-03-21 at 8.41.42 PM (2).jpeg" alt="Chevrolet Camaro SS 1969">
+            </div>
+          
+            <div class="info">
+                <h2>Chevrolet Camaro SS</h2>
+                <p class="precio">$1,500,000 MXN</p>
+                <p class="estado">Disponible</p>
+                <div class="caracteristicas">
+                    <div><strong>Año:</strong> 1969</div>
+                    <div><strong>Transmisión:</strong> Manual</div>
+                    <div><strong>Kilometraje:</strong> 25,000 km</div>
+                </div>
+                <a href="#" class="boton">Comprar Ahora</a>
+            </div>
+        </section>
+        
+        <!-- GALERÍA DE FOTOS -->
+        <div class="galeria">
+            
+            <a href="camaro-imagenes/WhatsApp Image 2025-03-21 at 8.41.40 PM (1).jpeg" target="_blank"><img src="camaro-imagenes/WhatsApp Image 2025-03-21 at 8.41.40 PM (1).jpeg" alt="Gallery 1"></a>
+            <a href="camaro-imagenes/WhatsApp Image 2025-03-21 at 8.41.40 PM (2).jpeg" target="_blank"><img src="camaro-imagenes/WhatsApp Image 2025-03-21 at 8.41.40 PM (2).jpeg" alt="Gallery 2"></a>
+            <a href="camaro-imagenes/WhatsApp Image 2025-03-21 at 8.41.40 PM.jpeg" target="_blank"><img src="camaro-imagenes/WhatsApp Image 2025-03-21 at 8.41.40 PM.jpeg" alt="Gallery 3"></a>
+            <a href="camaro-imagenes/WhatsApp Image 2025-03-21 at 8.41.40 PM (3).jpeg" target="_blank"><img src="camaro-imagenes/WhatsApp Image 2025-03-21 at 8.41.40 PM (3).jpeg" alt="Gallery 4"></a>
+            <a href="camaro-imagenes/WhatsApp Image 2025-03-21 at 8.41.41 PM (5).jpeg" target="_blank"><img src="camaro-imagenes/WhatsApp Image 2025-03-21 at 8.41.41 PM (5).jpeg" alt="Gallery 5"></a>
+            <a href="camaro-imagenes/WhatsApp Image 2025-03-21 at 8.41.41 PM (7).jpeg" target="_blank"><img src="camaro-imagenes/WhatsApp Image 2025-03-21 at 8.41.41 PM (7).jpeg" alt="Gallery 6"></a>
+            <a href="camaro-imagenes/WhatsApp Image 2025-03-21 at 8.41.42 PM (1).jpeg" target="_blank"><img src="camaro-imagenes/WhatsApp Image 2025-03-21 at 8.41.42 PM (1).jpeg" alt="Gallery 7"></a>
+            <a href="camaro-imagenes/WhatsApp Image 2025-03-21 at 8.41.42 PM (3).jpeg" target="_blank"><img src="camaro-imagenes/WhatsApp Image 2025-03-21 at 8.41.42 PM (3).jpeg" alt="Gallery 8"></a>
+        </div>
+        
+        <!-- Menú de pestañas -->
+        <div class="tabs">
+            <a href="#" class="tab active" onclick="showTab(event, 'descripcion')">DESCRIPCIÓN</a>
+            <a href="#" class="tab" onclick="showTab(event, 'especificaciones')">ESPECIFICACIONES</a>
+            <a href="#" class="tab" onclick="showTab(event, 'contacto')">INFORMACIÓN DE CONTACTO</a>
+            <a href="#" class="tab" onclick="showTab(event, 'resenas')">RESEÑAS</a>
+        </div>
+        
+        <!-- Contenido de las pestañas -->
+        <div class="tab-content active" id="descripcion">
+            <h3>Descripción</h3>
+            <p>El Chevrolet Camaro SS 1969 es un ícono del automovilismo. Con un motor V8 de alto rendimiento, este muscle car ofrece una experiencia de conducción inigualable. Su diseño clásico y su potencia lo convierten en una joya para los coleccionistas.</p>
+        </div>
+
+        <div class="tab-content" id="especificaciones">
+            <h3>Especificaciones</h3>
+            <ul>
+                <li>Motor: V8 6.5L</li>
+                <li>Potencia: 375 HP</li>
+                <li>Transmisión: Manual de 4 velocidades</li>
+                <li>0-100 km/h: 6.5 segundos</li>
+            </ul>
+        </div>
+        
+        <div class="tab-content" id="contacto">
+            <h3>Información de Contacto</h3>
+            <p>Teléfono: 55-1234-5678</p>
+            <p>Email: contacto@joyasdelasfalto.com</p>
+        </div>
+        
+        <div class="tab-content" id="resenas">
+            <h3>Reseñas</h3>
+            <p>★★★★★ - "Un clásico impresionante, la mejor inversión que he hecho." - Juan P.</p>
+            <p>★★★★★ - "Increíble sonido del motor, pura potencia." - Miguel R.</p>
+        </div>
+        
+    </div>
+
+ 
+
+    <script>
+     
+        
+     function showTab(event, tabId) {
+            event.preventDefault();
+            
+            // Quitar clase 'active' de todas las pestañas
+            document.querySelectorAll(".tab").forEach(tab => tab.classList.remove("active"));
+            event.target.classList.add("active");
+
+            // Ocultar todo el contenido de pestañas
+            document.querySelectorAll(".tab-content").forEach(content => content.classList.remove("active"));
+
+            // Mostrar la pestaña seleccionada
+            document.getElementById(tabId).classList.add("active");
+        }
+    </script>
+       <footer class="footer">
+        <p>© 2025 JOYAS DEL ASFALTO. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

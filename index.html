@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Autos Deportivos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+    <script>
+    function showSection(id) {
+        document.getElementById('seguro').classList.add('hidden');
+        document.getElementById('vehiculos').classList.add('hidden');
+        document.getElementById(id).classList.remove('hidden');
+    }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <img src="logo.jpeg" alt="Logo">
+        <nav class="navbar">
+            <a href="vehiculos.html">Vehículos</a>
+           
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    
+      
+    <section class="banner">
+        <div class="banner-text">
+            <h1>Autos Deportivos Clásicos: Pasión, Potencia y Exclusividad</h1>
+            <p>No es solo un auto, es una declaración de estilo y velocidad. Conoce nuestra exclusiva selección de deportivos clásicos, donde el lujo y el rendimiento se fusionan para ofrecerte una experiencia única. Conduce historia, siente el poder.</p>
+        </div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJIcwwGKTQPdvS6E8WSjJFxqoEYbNmfo4eJg&s" alt="Auto Deportivo">
+    </section>
+    
+    <footer class="footer">
+        <p>© 2025 JOYAS DEL ASFALTO. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

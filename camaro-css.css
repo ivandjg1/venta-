@@ -1,0 +1,278 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0f0505;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* HEADER */
+.header {
+    background-color: #3E2723;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header img {
+    height: 50px;
+    padding: 10px;
+    border-radius: 15px;
+    transform: rotate(90deg);
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    background: #6A1B1A;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #8C2E2D;
+}
+
+/* DETALLE DEL AUTO */
+.detalle {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagen principal */
+.detalle .imagen {
+    flex: 2;
+}
+
+.detalle .imagen img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Información del auto */
+.detalle .info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Precio */
+.precio {
+    font-size: 28px;
+    font-weight: bold;
+    background: black;
+    color: white;
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+/* Estado del vehículo */
+.estado {
+    font-size: 18px;
+    font-weight: bold;
+    color: green;
+}
+
+/* Características */
+.caracteristicas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.caracteristicas div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.caracteristicas div i {
+    color: red;
+    font-size: 20px;
+}
+
+/* Botones de acción */
+.boton {
+    background-color: #d32f2f;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-decoration: none;
+}
+
+.boton:hover {
+    background-color: #9a0000;
+}
+
+/* Galería */
+.galeria {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.galeria img {
+    width: 80px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s;
+}
+
+.galeria img:hover {
+    border: 2px solid red;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.tabs a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #B38B6D;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.tabs a:hover {
+    color: red;
+    border-bottom: 2px solid red;
+}
+/* Estilos del contenedor de pestañas */
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+/* Estilos de cada pestaña */
+.tab {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    transition: color 0.3s, border-bottom 0.3s;
+    padding-bottom: 5px;
+}
+
+/* Pestaña activa */
+.tab.active {
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+/* Efecto hover */
+.tab:hover {
+    color: red;
+}
+
+/* Estilos del contenido de pestañas */
+.tab-content {
+    display: none;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Mostrar el contenido activo */
+.tab-content.active {
+    display: block;
+}
+
+/* Reseñas */
+.reseñas {
+    margin-top: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reseñas h3 {
+    color: #333;
+}
+
+.estrella {
+    color: gold;
+}
+
+.flecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.izquierda {
+    left: 10px;
+}
+
+.derecha {
+    right: 10px;
+}
+
+.galeria img.active {
+    display: block;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #6A1B1A;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}

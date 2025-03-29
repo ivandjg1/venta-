@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ford Mustang 1970</title>
+    <link rel="stylesheet" href="mustang-style.css">
+</head>
+<body>
+
+    <header class="header">
+        <img src="logo.jpeg" alt="Logo">
+        <nav class="navbar">
+            <a href="index.html">Inicio</a>
+            <a href="Nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="detalle">
+        <img src="mustang.jpeg" alt="Ford Mustang 1970">
+        <h2>Ford Mustang</h2>
+        <p><strong>Año:</strong> 1970</p>
+        <p><strong>Precio:</strong> $980,000 MXN</p>
+        <p>Un clásico americano con un diseño atemporal y un potente motor V8.</p>
+    </section>
+
+    <!-- Menú de pestañas -->
+    <div class="tabs">
+        <a href="#" class="tab active" onclick="showTab(event, 'descripcion')">DESCRIPCIÓN</a>
+        <a href="#" class="tab" onclick="showTab(event, 'especificaciones')">ESPECIFICACIONES</a>
+        <a href="#" class="tab" onclick="showTab(event, 'contacto')">INFORMACIÓN DE CONTACTO</a>
+        <a href="#" class="tab" onclick="showTab(event, 'resenas')">RESEÑAS</a>
+    </div>
+
+    <!-- Contenido de las pestañas -->
+    <div class="tab-content active" id="descripcion">
+        <h3>Descripción</h3>
+        <p>El Ford Mustang 1970 es un muscle car icónico, reconocido por su diseño agresivo y su rendimiento superior. Con un motor V8 de alto desempeño, es el sueño de cualquier amante de los autos clásicos.</p>
+    </div>
+
+    <div class="tab-content" id="especificaciones">
+        <h3>Especificaciones</h3>
+        <ul>
+            <li>Motor: V8 5.8L</li>
+            <li>Potencia: 290 HP</li>
+            <li>Transmisión: Manual de 4 velocidades</li>
+            <li>0-100 km/h: 7.0 segundos</li>
+        </ul>
+    </div>
+
+    <div class="tab-content" id="contacto">
+        <h3>Información de Contacto</h3>
+        <p>Teléfono: 55-5678-1234</p>
+        <p>Email: ventas@joyasdelasfalto.com</p>
+    </div>
+
+    <div class="tab-content" id="resenas">
+        <h3>Reseñas</h3>
+        <p>★★★★★ - "El mejor Mustang que he tenido, su motor suena increíble." - Luis A.</p>
+        <p>★★★★★ - "Un coche que vale cada centavo, puro poder." - Ricardo S.</p>
+    </div>
+
+    <footer class="footer">
+        <p>© 2025 JOYAS DEL ASFALTO. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function showTab(event, tabId) {
+            event.preventDefault();
+            
+            // Quitar clase 'active' de todas las pestañas
+            document.querySelectorAll(".tab").forEach(tab => tab.classList.remove("active"));
+            event.target.classList.add("active");
+
+            // Ocultar todo el contenido de pestañas
+            document.querySelectorAll(".tab-content").forEach(content => content.classList.remove("active"));
+
+            // Mostrar la pestaña seleccionada
+            document.getElementById(tabId).classList.add("active");
+        }
+    </script>
+
+</body>
+</html>

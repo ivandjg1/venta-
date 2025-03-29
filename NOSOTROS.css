@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #0f0505;
+    margin: 0;
+    padding: 0;
+    background-color: #3E2723;
+}
+
+.header {
+    background: url('https://source.unsplash.com/1600x900/?classic-car') no-repeat center center/cover;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img {
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    transform: rotate(90deg);
+}
+
+.header img:hover {
+    transform: rotate(360deg);
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    justify-content: center;
+    padding: 15px;
+    
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s;
+    background: #b71c1c;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+
+.navbar a:hover {
+    background: #ff5252;
+    transform: scale(1.1);
+}
+
+.container, .container-text {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Playfair Display', serif;
+    background: #252525;
+    padding: 20px;
+    color: #E0C097;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+
+.footer {
+    background: #3E2723;
+    padding: 20px;
+    text-align: center;
+    color: #D7C7B9;
+}

@@ -1,0 +1,59 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación Estilo Uber</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Contenedor de inicio de sesión -->
+    <div id="login-container" class="container">
+        <h2>Iniciar Sesión</h2>
+        <div id="error-login" style="color: red;"></div>
+        <form onsubmit="event.preventDefault(); login();">
+            <input type="text" id="username" placeholder="Usuario" required>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <button type="submit">Entrar</button>
+        </form>
+        <p>¿No tienes cuenta? <span class="toggle-link" onclick="toggleForms()">Regístrate</span></p>
+    </div>
+
+    <!-- Contenedor de registro -->
+    <div id="register-container" class="container hidden">
+        <h2>Registro</h2>
+        <div id="error-register" style="color: red;"></div>
+        <form onsubmit="event.preventDefault(); register();">
+            <input type="text" id="new-username" placeholder="Usuario" required>
+            <input type="email" id="email" placeholder="Correo Electrónico" required>
+            <input type="password" id="new-password" placeholder="Contraseña" required>
+            <button type="submit">Crear Cuenta</button>
+        </form>
+        <p>¿Ya tienes cuenta? <span class="toggle-link" onclick="toggleForms()">Inicia sesión</span></p>
+    </div>
+
+    <!-- Contenedor del mapa -->
+    <div id="map-container" class="container hidden">
+        <h2>Mapa de Ubicaciones</h2>
+        <input type="text" id="search-input" placeholder="Buscar una dirección o lugar...">
+        <button onclick="searchLocation()">Buscar</button>
+        <br>
+        <input type="text" id="my-location" placeholder="Mi ubicación actual" readonly>
+        <button onclick="getCurrentLocation()">Obtener mi ubicación</button>
+        <div id="map"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+    <script 
+        src="https://maps.googleapis.com/maps/api/js?AIzaSyCalH6lgtLQV_sZp-n9Nyal22N2YuhYG0k&callback=initMap"
+        async
+        defer>
+    </script>
+</body>
+</html>
+

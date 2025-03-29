@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+        color: #0f0505; 
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: #3E2723; 
+    padding: 20px;
+    text-align: center;
+    color: #D7C7B9; 
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img {
+    height: 50PX;
+    padding: 10px;
+    border-radius: 15px;
+    transform: rotate(90deg);
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.navbar a {
+    color: #D7C7B9; 
+    text-decoration: none;
+    transition: color 0.3s;
+    background: #6A1B1A; /* Color vino */
+    padding: 10px;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.navbar a:hover {
+    color: #D7C7B9; 
+}
+
+.banner {
+    display: flex;
+    flex-direction: row-reverse; 
+    align-items: center;
+    justify-content: space-between;
+    background: #131212; 
+    padding: 40px;
+    color: #B38B6D; 
+}
+
+.banner img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.banner-text {
+    width: 45%;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+
+.vehicles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.vehicle-card {
+   
+    padding: 15px;
+    border-radius: 10px;
+        text-align: center;
+}
+
+.vehicle-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.footer {
+    background: #3E2723; 
+    padding: 20px;
+    text-align: center;
+    color: #D7C7B9; 
+}
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    table, th, td {
+        border: 1px solid #d2a679;
+        padding: 10px;
+    }
+

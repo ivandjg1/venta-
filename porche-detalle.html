@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche 911 Carrera 1985</title>
+    <link rel="stylesheet" href="porche_styles.css">
+</head>
+<body>
+    <!-- Contenedor principal -->
+    <div class="container">
+        
+        <!-- HEADER -->
+        <header class="header">
+            <img src="logo.jpeg" alt=" Logo">
+            <div class="navbar">
+                <a href="#">Inicio</a>
+                <a href="#">Características</a>
+                
+                <a href="#">Reseñas</a>
+            </div>
+        </header>
+
+        <!-- DETALLE DEL AUTO -->
+        <div class="detalle">
+            <div class="imagen">
+                <img src="porche 911.jpeg" alt="Porsche 911 Carrera 1985">
+            </div>
+            <div class="info">
+                <h2>Porsche 911 Carrera 1985</h2>
+                <p>Un clásico atemporal, el Porsche 911 Carrera 1985 ofrece una experiencia de conducción única con un diseño elegante y un motor potente.</p>
+                
+                <div class="estado">Estado: Excelente</div>
+                <div class="caracteristicas">
+                    <div>
+                        <span>Motor: 3.2L 6 Cilindros</span>
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div>
+                        <span>Transmisión: Manual</span>
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div>
+                        <span>Color: Gris</span>
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <div>
+                        <span>Velocidad máxima: 250 km/h</span>
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                </div>
+                <a href="#" class="boton">Comprar Ahora</a>
+            </div>
+        </div>
+
+        <!-- GALERÍA DE FOTOS -->
+        <div class="galeria">
+            <img src="porsche-gallery1.jpg" alt="Porsche Gallery 1">
+            <img src="porsche-gallery2.jpg" alt="Porsche Gallery 2">
+            <img src="porsche-gallery3.jpg" alt="Porsche Gallery 3">
+            <img src="porsche-gallery4.jpg" alt="Porsche Gallery 4">
+        </div>
+
+      
+        <!-- Menú de pestañas -->
+        <div class="tabs">
+            <a href="#" class="tab active" onclick="showTab(event, 'descripcion')">DESCRIPCIÓN</a>
+            <a href="#" class="tab" onclick="showTab(event, 'especificaciones')">ESPECIFICACIONES</a>
+            <a href="#" class="tab" onclick="showTab(event, 'contacto')">INFORMACIÓN DE CONTACTO</a>
+            <a href="#" class="tab" onclick="showTab(event, 'resenas')">RESEÑAS</a>
+        </div>
+
+        <!-- CONTENIDO DE PESTAÑAS -->
+        <div class="tab-content active" id="descripcion">
+            <h3>Detalles del Porsche 911 Carrera 1985</h3>
+            <p>El Porsche 911 Carrera 1985 es conocido por su motorización robusta y su diseño aerodinámico. Con un motor de 3.2 litros, este vehículo de lujo sigue siendo uno de los favoritos entre los entusiastas de los autos deportivos.</p>
+        </div>
+
+        <div class="tab-content" id="especificaciones">
+            <h3>Características del Porsche 911 Carrera 1985</h3>
+            <p>Este modelo de Porsche presenta una caja de cambios manual de 5 velocidades, suspensión independiente, y frenos de disco ventilados. Es ideal para quienes buscan un coche clásico con una excelente maniobrabilidad.</p>
+        </div>
+        
+        <div class="tab-content" id="contacto">
+            <h3>Información de Contacto</h3>
+            <p>Teléfono: 55-1234-5678</p>
+            <p>Email: contacto@joyasdelasfalto.com</p>
+        </div>
+
+        <div class="tab-content" id="resenas">
+            <h3>Reseñas</h3>
+            <div class="reseñas">
+                <h4>Juan Pérez</h4>
+                <p>Un coche impresionante que combina lujo, potencia y diseño. Sin duda, el mejor Porsche que he manejado.</p>
+                <div class="estrella">★★★★★</div>
+            </div>
+            <div class="reseñas">
+                <h4>Ana Gómez</h4>
+                <p>Me encanta el Porsche 911 Carrera 1985. Es un auto muy divertido de conducir y su apariencia es atemporal.</p>
+                <div class="estrella">★★★★☆</div>
+            </div>
+        </div>
+
+    </div>
+
+   
+
+    <script>
+             function showTab(event, tabId) {
+            event.preventDefault();
+            
+            // Quitar clase 'active' de todas las pestañas
+            document.querySelectorAll(".tab").forEach(tab => tab.classList.remove("active"));
+            event.target.classList.add("active");
+
+            // Ocultar todo el contenido de pestañas
+            document.querySelectorAll(".tab-content").forEach(content => content.classList.remove("active"));
+
+            // Mostrar la pestaña seleccionada
+            document.getElementById(tabId).classList.add("active");
+        }
+    </script>
+     <!-- FOOTER -->
+     <footer class="footer">
+        <p>&copy; 2025 Porsche 911 Carrera 1985. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
