@@ -309,15 +309,15 @@ body {
     }
 
     .galeria img {
-        width: 60px;
+        width: 80px;
         height: 40px;
     }
 
     .detalle .imagen {
-        flex: 1;
+        flex: 10;
     }
 
     .footer {
-        font-size: 12px;
+        font-size: 120px;
     }
 }
