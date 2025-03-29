@@ -275,11 +275,11 @@ body {
     }
 
     .detalle .imagen img {
-        width: 80%; /* Ajustar imagen para pantallas pequeñas */
+        width: 90%; /* Ajustar imagen para pantallas pequeñas */
     }
 
     .detalle .info {
-        text-align: center;
+        text-align: justify;
     }
 
     .galeria img {
